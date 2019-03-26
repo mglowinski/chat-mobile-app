@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#FFFFFF</color>
+    <color name="signUpColor">#066e8a</color>
+    <color name="bg_btn_send">#1e6258</color>
+    <color name="bg_msg_input">#e8e8e8</color>
+    <color name="text_msg_input">#626262</color>
+    <color name="text_msg_input_hint">#80626262</color>
+    <color name="label_msg_from_name">#e5e5e5</color>
+    <color name="msg_out">#66b2b2</color>
+    <color name="msg_from">#e5e7eb</color>
+    <color name="msg_from_text">#434343</color>
+</resources>

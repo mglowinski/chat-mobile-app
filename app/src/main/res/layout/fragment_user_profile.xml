@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/toolbar_fragment_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:navigationIcon="?android:attr/homeAsUpIndicator"
+                app:navigationContentDescription="@string/abc_action_bar_up_description"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+                app:title="Profile"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout">
+
+        <ImageView
+                android:id="@+id/header_cover_image"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:scaleType="centerCrop"
+                android:src="@drawable/nav_menu_header_bg"
+                app:srcCompat="@drawable/nav_menu_header_bg"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+
+                android:clickable="true"
+                app:civ_border_width="3dp"
+                app:civ_border_color="#FFFFFFFF"
+
+                android:id="@+id/profile"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_below="@+id/header_cover_image"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="-110dp"
+                android:elevation="5dp"
+                android:padding="20dp"
+                android:src="@drawable/man"
+                android:focusable="true"/>
+
+        <RelativeLayout
+                android:id="@+id/profile_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/header_cover_image"
+                android:background="#ebca0707"
+                android:elevation="4dp"
+                android:paddingBottom="5dp">
+
+            <TextView
+                    android:id="@+id/text_view_edit_profile_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="25dp"
+                    android:text="Maciej Głowiński"
+                    android:textColor="#fff"
+                    android:textSize="24sp"
+                    android:textStyle="bold"/>
+
+            <TextView
+                    android:id="@+id/text_view_profile_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_view_edit_profile_name"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:text="(nickname)"
+                    android:textColor="#fff"
+                    android:textSize="18sp"/>
+
+            <TextView
+                    android:id="@+id/text_view_profile_index_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_view_profile_email"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:text="blabla"
+                    android:textColor="#fff"
+                    android:textSize="16sp"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+            android:id="@+id/profile_info_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@mipmap/background"
+            android:orientation="vertical">
+
+        <android.support.constraint.ConstraintLayout
+                android:id="@+id/contstraint_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <TextView
+                    android:id="@+id/text_view_profile_header_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="Phone: "
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@android:color/white"
+                    android:layout_height="1dp"/>
+
+            <TextView
+                    android:id="@+id/text_view_profile_header_interests"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="Interests: "
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/text_view_profile_header_phone"/>
+
+            <View
+                    app:layout_constraintTop_toBottomOf="@id/text_view_profile_header_interests"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@android:color/white"
+                    android:layout_height="1dp"/>
+
+            <TextView
+                    android:id="@+id/text_view_profile_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:clickable="true"
+                    android:textSize="15sp"
+                    app:layout_constraintLeft_toRightOf="@+id/text_view_profile_header_phone"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                    android:id="@+id/text_view_profile_interests"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:textSize="15sp"
+                    app:layout_constraintTop_toBottomOf="@+id/text_view_profile_header_phone"
+                    app:layout_constraintLeft_toRightOf="@+id/text_view_profile_header_interests"/>
+
+        </android.support.constraint.ConstraintLayout>
+
+        <TextView
+                android:id="@+id/text_view_profile_header_about_me"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="About Me: "
+                android:paddingTop="5dp"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:textSize="15sp"/>
+
+        <TextView
+                android:id="@+id/text_view_profile_about_me"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/shape_field"
+                android:scrollbars="vertical"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:textSize="15sp"
+                app:layout_constraintLeft_toRightOf="@+id/text_view_profile_header_about_me"
+                app:layout_constraintTop_toBottomOf="@+id/text_view_profile_header_interests"/>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_gravity="top"
+                android:gravity="bottom">
+
+            <Button
+                    android:id="@+id/btn_edit_profile"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:text="Edit profile"
+                    android:textColor="@color/signUpColor"
+                    android:shadowColor="@android:color/transparent"
+                    android:layout_gravity="center"
+                    android:background="@drawable/shape_login"/>
+
+            <Button
+                    android:id="@+id/btn_change_password"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:text="Change password"
+                    android:textColor="@color/signUpColor"
+                    android:shadowColor="@android:color/transparent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/shape_login"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

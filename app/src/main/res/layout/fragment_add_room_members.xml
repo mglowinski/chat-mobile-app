@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/toolbar_fragment_add_room_members"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/colorPrimary"
+                app:navigationContentDescription="@string/abc_action_bar_up_description"
+                app:navigationIcon="?android:attr/homeAsUpIndicator"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+                app:title="Add room members"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@mipmap/background"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:orientation="vertical">
+
+        <TextView
+                android:id="@+id/text_view_choose_users_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:text="Choose members"/>
+
+        <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_add_room_members"
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:paddingBottom="20dp"
+                android:scrollbars="vertical"/>
+
+        <Button
+                android:id="@+id/btn_save_add_members"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="15dp"
+                android:text="Add members"
+                android:textColor="@color/signUpColor"
+                android:shadowColor="@android:color/transparent"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:background="@drawable/shape_login"/>
+
+    </LinearLayout>
+
+</LinearLayout>

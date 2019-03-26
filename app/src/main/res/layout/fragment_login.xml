@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/login_layout"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@mipmap/background"
+              android:orientation="vertical"
+              android:gravity="center"
+              android:padding="20dp">
+
+    <ImageView
+            android:layout_width="80dp"
+            android:layout_height="140dp"
+            android:paddingBottom="50dp"
+            android:src="@mipmap/chat_icon"/>
+
+    <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintEnabled="false">
+
+        <EditText
+                android:id="@+id/edit_text_log_in_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:layout_margin="10dp"
+                android:padding="15dp"
+                android:background="@drawable/shape_field"
+                android:drawableStart="@drawable/ic_email_black_24dp"
+                android:drawablePadding="10dp"
+                android:textColor="@color/white"
+                android:hint="Email"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintEnabled="false">
+
+        <EditText
+                android:id="@+id/edit_text_log_in_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="15dp"
+                android:background="@drawable/shape_field"
+                android:drawableStart="@drawable/ic_lock_black_24dp"
+                android:drawablePadding="10dp"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:textColor="@color/white"
+                android:textColorHighlight="@color/white"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <CheckBox
+            android:id="@+id/check_box_remember_me"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/remember_me"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:buttonTint="@color/white"
+            android:layout_marginBottom="10dp"/>
+
+    <Button
+            android:id="@+id/btn_log_in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/log_in"
+            android:textColor="@color/signUpColor"
+            android:shadowColor="@android:color/transparent"
+            android:padding="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/shape_login"/>
+
+</LinearLayout>

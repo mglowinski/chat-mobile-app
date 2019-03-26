@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="end"
+              android:orientation="vertical"
+              android:paddingBottom="5dp"
+              android:paddingEnd="10dp"
+              android:paddingTop="5dp">
+
+    <TextView
+            android:id="@+id/labelMsgFrom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ktoś tam"
+            android:textColor="@color/label_msg_from_name"
+            android:textSize="12sp"
+            android:textStyle="italic"/>
+
+    <TextView
+            android:id="@+id/labelMsgDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:text="Data"
+            android:textColor="@color/label_msg_from_name"
+            android:textSize="12sp"
+            android:textStyle="italic"/>
+
+    <TextView
+            android:id="@+id/textViewMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:text="To debil jest!"
+            android:background="@drawable/message_out_background"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:textColor="@color/white"
+            android:textSize="16sp"/>
+
+    <TextView
+            android:id="@+id/labelMsgEdited"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:text="(Edited)"
+            android:visibility="gone"
+            android:textColor="@color/label_msg_from_name"
+            android:textSize="12sp"
+            android:textStyle="italic"/>
+
+</LinearLayout>

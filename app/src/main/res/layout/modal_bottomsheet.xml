@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:paddingTop="16dp"
+              android:background="#F3F3F3"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <TextView
+            android:text="Select source"
+            android:gravity="center"
+            android:textColor="#B0B0B0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            android:textSize="18sp"/>
+
+    <Button
+            android:layout_marginTop="8dp"
+            android:text="Select from gallery"
+            style="@style/action_button_bs"
+            android:id="@+id/btn_gallery"/>
+
+    <View
+            android:layout_width="match_parent"
+            android:background="@android:color/darker_gray"
+            android:layout_height="1dp"/>
+
+    <Button
+            android:layout_marginTop="8dp"
+            android:text="Select from files"
+            style="@style/action_button_bs"
+            android:textAllCaps="false"
+            android:id="@+id/btn_files"/>
+
+    <View
+            android:layout_width="match_parent"
+            android:background="@android:color/darker_gray"
+            android:layout_height="1dp"/>
+
+    <Button
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="4dp"
+            android:text="Cancel"
+            android:textColor="#D04D5B"
+            style="@style/action_button_bs"
+            android:id="@+id/btn_cancel"/>
+</LinearLayout>

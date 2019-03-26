@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Chat</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="new_room_name">Name</string>
+    <string name="password">Password</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="log_in">Log In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="name">Name</string>
+    <string name="already_a_member_login">Already a member? Login</string>
+    <string name="register">register</string>
+    <string name="btn_send">Send</string>
+    <string name="add_room">New Room</string>
+    <string name="create_new_room">Create new room</string>
+    <string name="new_room_description">Description</string>
+    <string name="modify_message">Modify Message</string>
+    <string name="modify_room">modify room</string>
+    <string name="delete_message">delete message</string>
+    <string name="delete_file">delete file</string>
+    <string name="download_file">download file</string>
+</resources>

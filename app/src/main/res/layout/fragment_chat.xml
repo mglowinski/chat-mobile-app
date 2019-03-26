@@ -1,0 +1,69 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/toolbar_fragment_chat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:navigationContentDescription="@string/abc_action_bar_up_description"
+                app:navigationIcon="?android:attr/homeAsUpIndicator"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+                app:title="Chat"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_messages"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:scrollbars="vertical"
+            android:background="@mipmap/background"
+            android:layout_weight="1"/>
+
+    <LinearLayout
+            android:id="@+id/llMsgCompose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+        <EditText
+                android:id="@+id/inputMsg"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:hint="Type message here..."
+                android:textColorHint="@color/text_msg_input_hint"
+                android:background="@color/white"
+                android:textColor="@color/text_msg_input"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"/>
+
+        <ImageView
+                android:id="@+id/btn_choose_file"
+                android:layout_width="32dp"
+                android:layout_height="48dp"
+                android:background="@color/colorPrimaryDark"
+                android:src="@drawable/ic_attach_file_black_24dp"/>
+
+        <Button
+                android:id="@+id/btn_send_message"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_btn_send"
+                android:textColor="@color/white"
+                android:text="@string/btn_send"/>
+
+    </LinearLayout>
+
+</LinearLayout>

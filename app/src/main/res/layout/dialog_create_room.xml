@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="#088da5"
+              android:padding="5dp">
+
+    <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:text="@string/add_room"
+            android:textSize="25sp"
+            android:textStyle="bold"/>
+
+    <EditText
+            android:id="@+id/edit_text_new_room_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="@string/new_room_name"/>
+
+    <EditText
+            android:id="@+id/edit_text_new_room_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="@string/new_room_description"/>
+
+    <TextView
+            android:visibility="gone"
+            android:id="@+id/text_view_error_msg"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:drawableStart="@drawable/ic_error_black_24dp"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <Button
+            android:id="@+id/btn_create_new_room"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="@string/create_new_room"
+            android:textColor="@android:color/white"/>
+
+</LinearLayout>

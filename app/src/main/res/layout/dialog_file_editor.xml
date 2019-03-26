@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="#088da5"
+              android:padding="5dp">
+
+    <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="12dp"
+            android:text="File Editor"
+            android:textSize="25sp"
+            android:textStyle="bold"/>
+
+    <Button
+            android:id="@+id/btn_delete_file"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorPrimaryDark"
+            android:drawableStart="@drawable/ic_delete_black_24dp"
+            android:padding="10dp"
+            android:text="@string/delete_file"
+            android:textColor="@android:color/white"/>
+
+    <Button
+            android:id="@+id/btn_download_file"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:drawableStart="@drawable/ic_file_download_black_24dp"
+            android:padding="10dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="@string/download_file"
+            android:textColor="@android:color/white"/>
+
+</LinearLayout>
